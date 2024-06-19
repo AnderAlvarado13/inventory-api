@@ -1,6 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db.config');
 
+
 const Product = sequelize.define('Product', {
   lotNumber: { type: DataTypes.STRING, allowNull: false },
   name: { type: DataTypes.STRING, allowNull: false },

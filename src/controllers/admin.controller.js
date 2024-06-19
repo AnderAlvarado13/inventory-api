@@ -44,9 +44,21 @@ async function deleteProduct(req, res) {
   }
 }
 
+// Obtener compras por cliente
+async function getAllPurchases(req, res){
+  try {
+    const allPurchases = await adminService.getAllPurchases();
+    res.status(200).json(allPurchases);
+  } catch (error) {
+    console.error('Error al obtener todas las compras:', error);
+    res.status(500).json({ message: 'Hubo un error al obtener todas las compras realizadas por los clientes' });
+  }
+};
+
 module.exports = {
   createProduct,
   getAllProducts,
   updateProduct,
   deleteProduct,
+  getAllPurchases,
 };

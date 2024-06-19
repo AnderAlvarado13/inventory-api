@@ -1,5 +1,5 @@
 const app = require('./app');
-const sequelize = require('./config/db.config');
+const { sequelize } = require('./models');
 
 // Sincronizar modelos con la base de datos (opcional)
 sequelize.sync({ force: false })

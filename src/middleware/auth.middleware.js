@@ -39,7 +39,7 @@ async function verifyAdmin(req, res, next) {
 async function verifyClient(req, res, next) {
   try {
     const user = await User.findByPk(req.userId);
-    if (!user || user.role !== 'client') {
+    if (!user || user.role !== 'CLIENT') {
       return res.status(403).json({ message: 'Acceso denegado. Se requiere rol de cliente.' });
     }
     next();
