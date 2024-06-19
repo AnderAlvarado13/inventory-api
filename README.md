@@ -19,12 +19,21 @@
 
 - Registrar Usuario:
 >`POST` http://localhost:3000/api/auth/register
-> Body:
+Body:
 ```json
 {
   "username": "Ejemplo",
   "password": "Ejemplo1234",
   "role": "client"
+}
+
+- Login Usuario:
+>`POST` http://localhost:3000/api/auth/login
+Body:
+```json
+{
+  "username": "anderson",
+  "password": "contrasena123"
 }
 
 
