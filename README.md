@@ -10,7 +10,7 @@
 - npm version "8.19.2"
 - MySQL
 > [!NOTE]
-> Puede que sea necesario que cree en su base de datos MySQL cree el esquema `inventory_db` y modificar las credencias en la ruta: src/config/db.config.js
+> Puede que sea necesario que cree en su base de datos MySQL cree el schemas `inventory_db` y modificar las credencias en la ruta: src/config/db.config.js
 
 ***Comandos***
 >
