@@ -32,8 +32,21 @@ Body:
 Body:
 ```json
 {
-  "username": "anderson",
-  "password": "contrasena123"
+  "username": "Ejemplo",
+  "password": "Ejemplo1234"
+}
+```
+- Crear Productos:
+>`POST` http://localhost:3000/api/admin/products
+Agregar: `Authorization: token`
+Body:
+```json
+{
+  "lotNumber": "001",
+  "name": "Ejemplo",
+  "price": "10000",
+  "quantity": "20",
+  "entryDate": "2024-06-19 02:04:13"
 }
 ```
 
