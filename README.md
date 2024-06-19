@@ -15,10 +15,11 @@
 - Ejecute `npm i --force` permite crear los archivos necesarios para gestionar la api.
 - Ejecute `npm start` para que se inicie la api, si todo salio correcto tendriamos disponible el puerto `localhost:3000` para el cual ya podemos realizarle peticiones.
 
-***request use**
+***request use***
 
 - Registrar Usuario:
 >`POST` http://localhost:3000/api/auth/register
+> Body:
 ```json
 {
   "username": "Ejemplo",
