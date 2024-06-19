@@ -26,7 +26,7 @@ Body:
   "password": "Ejemplo1234",
   "role": "client"
 }
-
+```
 - Login Usuario:
 >`POST` http://localhost:3000/api/auth/login
 Body:
@@ -35,5 +35,6 @@ Body:
   "username": "anderson",
   "password": "contrasena123"
 }
+```
 
 
